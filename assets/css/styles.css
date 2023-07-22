@@ -1,0 +1,180 @@
+/* Add your custom styles for the app here */
+/* You can use Bootstrap or any other CSS framework as needed */
+
+body {
+  background-color: #2d2013;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #2d2013;
+  padding: 1% 10% 1% 10%;
+  
+}
+
+.navbar-left img {
+  max-width: 400px;
+ }
+
+.navbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.social-icon img {
+  max-width: 30px;
+  margin-left: 0.5rem;
+}
+.search-container{
+	margin:10px;
+	padding: 0.2rem 0.5rem;
+ 
+}
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: auto;
+  padding: 0.2rem 0.5rem;
+  align: center;
+  width: 40%;
+}
+
+.search input {
+  border: none;
+  background: none;
+  color: #fff;
+  outline: none;
+  margin-left: 0.5rem;
+  flex: 1;
+}
+
+.search button {
+  background-color: #0070ba;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 2rem 0rem 2rem;
+  width:76%;
+  margin:auto;
+}
+
+.header .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .col {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.header .col img {
+  max-width: 200px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.header-middle {
+    margin: 0 auto;
+}
+
+.header-middle p{
+	font-size:14px;
+}
+.header-middle a{
+	color:#d57d1f;
+}
+
+.paypal-btn {
+  background-color: #0070ba;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid #fff;
+  margin: 2rem 0;
+}
+
+.main-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  margin-bottom: 2rem;
+  padding:1% 10%;
+}
+
+.meal-images img{
+  max-width: 250px;
+  margin: 0.5rem;
+  
+}
+
+.meal {
+	display: flex;
+    flex-wrap: wrap;
+	
+}
+.meal img,a{
+	max-width: 250px;
+	margin: 0.5rem;
+}
+
+.country-images img {
+	max-width: 200px;
+	}
+.country-images a{
+	text-decoration:none;
+}
+.name-list p {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #23180d;
+  padding: 1rem 10rem;
+}
+
+.footer-left {
+  color: #fff;
+  max-width: 200px;
+}
+
+.footer-middle img {
+  max-width: 350px;
+}
+
+.footer-right a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}

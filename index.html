@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Specify the version of Internet Explorer to use -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the width of the viewport to the width of the device, and scale the content to fit the viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to an external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to the Font Awesome icon library -->
+    <script src="https://kit.fontawesome.com/3dce9717da.js" crossorigin="anonymous"></script>
+    <!-- Set the title of the document -->
+    <title>Meal App </title>
+	<!-- Favicon Includes -->
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/image/other/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/image/other/favicon-16x16.png">
+</head>
+<body>
+    
+	
+	  <!-- Navigation Bar -->
+	<nav class="navbar">
+		<div class="navbar-left">
+			<img src="assets/image/other/logo.png" alt="Logo">
+		</div>
+		<div class="navbar-right">
+			<a href="#">Home</a>
+			<a href="#"id="fav">Favourite Meals</a>
+			<a href="#"id="reset">reset</a>
+			<a href="#" class="social-icon"><img src="assets/image/other/facebook_icon.png" alt="Facebook"></a>
+			<a href="#" class="social-icon"><img src="assets/image/other/twitter_icon.png" alt="Twitter"></a>
+			<div class="search-container">
+				<input type="text" placeholder="Search for a meal..." id="search-input" >      
+			</div>
+		</div>
+	</nav>
+	
+	<!-- Header Section -->
+  <header class="header">
+    <div class="row">
+      <div class="col-3">
+        <img src="assets/image/other/meal-icon.png" alt="Food Image 1">
+      </div>
+      <div class="col-6 header-middle">
+        <h1>Welcome to TheMealDB</h1>
+        <p>Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.</p>
+           <p>We also offer a <a>free JSON API </a>for anyone wanting to use it, with additional features for subscribers.</p>
+        <button class="paypal-btn">PayPal</button>
+		<p>Click above button to upgrade API for $3 per month (cancel anytime)Currently 76 supporters</p>
+      </div>
+      <div class="col-3">
+        <img src="assets/image/other/meal-icon.png" alt="Food Image 2">
+      </div>
+    </div>
+    <hr>
+    <div class="search">
+      <input type="text" id="search-input" placeholder="Search for a meal...">
+        <button id="search-button" >Search</button>
+    </div>
+    <p>
+		<img src="assets/image/icon/meal-icon1.png" alt="Twitter">Total Meals: 294 
+		<img src="assets/image/icon/meal-icon2.png" alt="Twitter">Total Ingredients: 574 
+		<img src="assets/image/icon/meal-icon3.png" alt="Twitter">Images: 294
+	</p>
+    <hr>
+  </header>
+
+	<!-- Create a div to hold the search results -->
+    <div id="search-results"></div>
+	
+	
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">Browse By Name @ 2023 TheMealDB</div>
+    <div class="footer-middle">
+      <img src="assets/image/other/logo-tcdb.png" alt="Logo">
+	  <img src="assets/image/other/logo-tadb.png" alt="Logo">
+	  <img src="assets/image/other/logo-tsdb.png" alt="Logo">
+    </div>
+    <div class="footer-right">
+      <a href="#">About</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+	
+	
+	
+	
+	
+	
+	
+    <!-- Link to an external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>The Meal App</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Favicon Includes -->
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/image/other/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/image/other/favicon-16x16.png">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="assets/image/other/logo.png" alt="Logo">
+    </div>
+    <div class="navbar-right">
+      <a href="#">Home</a>
+      <a href="#"id="fav">Favourite Meals</a>
+	  <a href="#"id="reset">reset</a>
+      <a href="#" class="social-icon"><img src="assets/image/other/facebook_icon.png" alt="Facebook"></a>
+      <a href="#" class="social-icon"><img src="assets/image/other/twitter_icon.png" alt="Twitter"></a>
+      <div class="search-container">
+	   <input type="text" placeholder="Search for a meal..." id="searchInput">      
+	  </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="row">
+      <div class="col-3">
+        <img src="assets/image/other/meal-icon.png" alt="Food Image 1">
+      </div>
+      <div class="col-6 header-middle">
+        <h1>Welcome to TheMealDB</h1>
+        <p>Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.</p>
+           <p>We also offer a <a>free JSON API </a>for anyone wanting to use it, with additional features for subscribers.</p>
+        <button class="paypal-btn">PayPal</button>
+		<p>Click above button to upgrade API for $3 per month (cancel anytime)Currently 76 supporters</p>
+      </div>
+      <div class="col-3">
+        <img src="assets/image/other/meal-icon.png" alt="Food Image 2">
+      </div>
+    </div>
+    <hr>
+    <div class="search">
+      <input type="text" id="search-input" placeholder="Search for a meal...">
+        <button id="search-button">Search</button>
+    </div>
+    <p>
+		<img src="assets/image/icon/meal-icon1.png" alt="Twitter">Total Meals: 294 
+		<img src="assets/image/icon/meal-icon2.png" alt="Twitter">Total Ingredients: 574 
+		<img src="assets/image/icon/meal-icon3.png" alt="Twitter">Images: 294
+	</p>
+    <hr>
+  </header>
+   <!--getting values of search bar-->
+   <!-- Create a div to hold the search results -->
+    <div id="search-results"></div>
+  <!-- Main Container -->
+  <div class="main-container">
+    <div class="container">
+      <h2 class="section-heading">Latest Meals</h2>
+  	    <div class="meal">
+			<div >
+				<a href="#">
+					<img src="assets/image/meal/meal11.jpg" alt="Tortang Talong">
+				</a>
+				<p>Tortang Talong</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/meal/meal12.jpg" alt="Grilled Eggplant with Coconut Milk">
+				</a>
+				<p>Grilled Eggplant with Coconut Milk</p>
+			</div>
+			<div >
+				<a href="#">
+					<img src="assets/image/meal/meal13.jpg" alt="Eggplant Adobo">
+				</a>
+				<p>Eggplant Adobo</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/meal/meal14.jpg" alt="Crispy Eggplant">
+				</a>
+				<p>Crispy Eggplant</p>
+			</div>
+			
+			<div >
+				<a href="#">
+					<img src="assets/image/meal/meal15.jpg" alt="Beef Asado">
+				</a>
+				<p>Beef Asado</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/meal/meal16.jpg" alt="Beef Caldereta">
+				</a>
+				<p>Beef Caldereta</p>
+			</div>
+			<div >
+				<a href="#">
+					<img src="assets/image/meal/meal17.jpg" alt="Bistek">
+				</a>
+				<p>Bistek</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/meal/meal18.jpg" alt="Beef Mechado">
+				</a>
+				<p>Beef Mechado</p>
+			</div>
+			
+		</div>
+      <hr>
+    
+      <h2 class="section-heading">Popular Ingredients</h2>
+        <div class="meal">
+			<div >
+				<a href="#">
+					<img src="assets/image/ingredients/ingredient1.png" alt="Chicken">
+				</a>
+				<p>Chicken</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/ingredients/ingredient2.png" alt="Salmon">
+				</a>
+				<p>Salmon</p>
+			</div>
+			<div >
+				<a href="#">
+					<img src="assets/image/ingredients/ingredient3.png" alt="Beef">
+				</a>
+				<p>Beef</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/ingredients/ingredient4.png" alt="Pork">
+				</a>
+				<p>Pork</p>
+			</div>
+			
+		</div>
+	  
+      <hr>
+    
+      <h2 class="section-heading">Random Meals</h2>
+        <div class="meal">
+			<div >
+				<a href="#">
+					<img src="assets/image/meal/meal21.jpg" alt="Spaghetti Bolognese">
+				</a>
+				<p>Spaghetti Bolognese</p>
+			</div>
+			<div>
+				<a href="#">
+					 <img src="assets/image/meal/meal22.jpg" alt="Crispy Eggplant">
+				</a>
+				<p>Crispy Eggplant</p>
+			</div>
+			<div >
+				<a href="#">
+					<img src="assets/image/meal/meal23.jpg" alt="Vegetable Shepherd's Pie">
+				</a>
+				<p>Vegetable Shepherd's Pie</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/meal/meal24.jpg" alt="Feteer Meshaltet">
+				</a>
+				<p>Feteer Meshaltet</p>
+			</div>
+			
+			<div >
+				<a href="#">
+					<img src="assets/image/meal/meal25.jpg" alt="Stamppot">
+				</a>
+				<p>Stamppot</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/meal/meal26.jpg" alt="White chocolate creme brulee">
+				</a>
+				<p>White chocolate creme brulee</p>
+			</div>
+			<div >
+				<a href="#">
+					<img src="assets/image/meal/meal27.jpg" alt="Ham hock colcannon">
+				</a>
+				<p>Ham hock colcannon</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/meal/meal28.jpg" alt="Krispy Kreme Donut">
+				</a>
+				<p>Krispy Kreme Donut</p>
+			</div>
+			
+		</div>
+      <hr>
+    
+      <h2 class="section-heading">Random Ingredients</h2>
+        <div class="meal">
+			<div >
+				<a href="#">
+					<img src="assets/image/ingredients/ingredient5.png" alt="Kosher Salt">
+				</a>
+				<p>Kosher Salt</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/ingredients/ingredient6.png" alt="Currants">
+				</a>
+				<p>Currants</p>
+			</div>
+			<div >
+				<a href="#">
+					<img src="assets/image/ingredients/ingredient7.png" alt="Coriander">
+				</a>
+				<p>Coriander</p>
+			</div>
+			<div>
+				<a href="#">
+					<img src="assets/image/ingredients/ingredient8.png" alt="Shredded Mexican Cheese">
+				</a>
+				<p>Shredded Mexican Cheese</p>
+			</div>
+			
+		</div>
+      <hr>
+    
+      <h2 class="section-heading">Browse Country</h2>
+      <div class="country-images">
+        <!-- Add your country flag images here -->
+		<a  href=#>
+			<img src="assets/image/flag/gb.png" alt="gb">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/us.png" alt="us">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/fr.png" alt="fr">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/ca.png" alt="ca">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/jm.png" alt="jm">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/cn.png" alt="cn">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/nl.png" alt="nl">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/eg.png" alt="eg">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/gr.png" alt="gr">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/in.png" alt="in">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/ie.png" alt="ie">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/it.png" alt="it">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/jp.png" alt="jp">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/kn.png" alt="kn">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/my.png" alt="my">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/mx.png" alt="mx">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/ma.png" alt="ma">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/hr.png" alt="hr">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/no.png" alt="no">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/pt.png" alt="pt">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/ru.png" alt="ru">		
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/ar.png" alt="ar">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/es.png" alt="es">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/sk.png" alt="sk">
+		</a>
+        <a href="#">
+			<img src="assets/image/flag/th.png" alt="th">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/sa.png" alt="sa">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/vn.png" alt="vn">	
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/tr.png" alt="tr">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/sy.png" alt="sy">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/dz.png" alt="dz">
+		</a>		
+		<a href="#">
+			<img src="assets/image/flag/tn.png" alt="tn">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/pl.png" alt="pl">
+		</a>
+		<a href="#">
+			<img src="assets/image/flag/ph.png" alt="ph">
+		</a>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        
+      </div>
+      <h5 class="section-heading">Browse By Name</h2>
+      <div class="name-list">
+        <p id="alphabetList">A / B / C / D / E / F / G / H / I / J / K / L / M / N / O / P / Q / R / S / T / U / V / W / X / Y / Z</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-left">Browse By Name @ 2023 TheMealDB</div>
+    <div class="footer-middle">
+      <img src="assets/image/other/logo-tcdb.png" alt="Logo">
+	  <img src="assets/image/other/logo-tadb.png" alt="Logo">
+	  <img src="assets/image/other/logo-tsdb.png" alt="Logo">
+    </div>
+    <div class="footer-right">
+      <a href="#">About</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+   
+    <!-- Link to an external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
